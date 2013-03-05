@@ -14,6 +14,8 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField* field;
+@property (assign) IBOutlet NSTextField* fTimeField;
+@property (assign) IBOutlet NSTextField* escTimeField;
 @property (assign) BOOL posting;
 @property (assign) BOOL escape;
 

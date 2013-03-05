@@ -35,7 +35,8 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
   }
   _escape = !_escape;
 
-  [self performSelector:@selector(step) withObject:nil afterDelay:0.65];
+  NSTimeInterval delay = [(_escape ? _escTimeField : _fTimeField) doubleValue];
+  [self performSelector:@selector(step) withObject:nil afterDelay:delay];
 }
 
 - (IBAction)start:(id)sender {
