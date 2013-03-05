@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'EventFaker' target in the 'EventFaker' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

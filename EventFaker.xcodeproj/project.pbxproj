@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAFCCFEC16E564BF0072685B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFCCFEB16E564BF0072685B /* Cocoa.framework */; };
+		CAFCCFF616E564BF0072685B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAFCCFF416E564BF0072685B /* InfoPlist.strings */; };
+		CAFCCFF816E564BF0072685B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFCCFF716E564BF0072685B /* main.m */; };
+		CAFCCFFC16E564BF0072685B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CAFCCFFA16E564BF0072685B /* Credits.rtf */; };
+		CAFCCFFF16E564BF0072685B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFCCFFE16E564BF0072685B /* AppDelegate.m */; };
+		CAFCD00216E564BF0072685B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFCD00016E564BF0072685B /* MainMenu.xib */; };
+		CAFCD00A16E564C00072685B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFCD00916E564C00072685B /* SenTestingKit.framework */; };
+		CAFCD00B16E564C00072685B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFCCFEB16E564BF0072685B /* Cocoa.framework */; };
+		CAFCD01316E564C00072685B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAFCD01116E564C00072685B /* InfoPlist.strings */; };
+		CAFCD01616E564C00072685B /* EventFakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFCD01516E564C00072685B /* EventFakerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAFCD00C16E564C00072685B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAFCCFE016E564BF0072685B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFCCFE716E564BF0072685B;
+			remoteInfo = EventFaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAFCCFE816E564BF0072685B /* EventFaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventFaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFCCFEB16E564BF0072685B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CAFCCFEE16E564BF0072685B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CAFCCFEF16E564BF0072685B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CAFCCFF016E564BF0072685B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CAFCCFF316E564BF0072685B /* EventFaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventFaker-Info.plist"; sourceTree = "<group>"; };
+		CAFCCFF516E564BF0072685B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAFCCFF716E564BF0072685B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAFCCFF916E564BF0072685B /* EventFaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventFaker-Prefix.pch"; sourceTree = "<group>"; };
+		CAFCCFFB16E564BF0072685B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CAFCCFFD16E564BF0072685B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAFCCFFE16E564BF0072685B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAFCD00116E564BF0072685B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CAFCD00816E564C00072685B /* EventFakerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventFakerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFCD00916E564C00072685B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CAFCD01016E564C00072685B /* EventFakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventFakerTests-Info.plist"; sourceTree = "<group>"; };
+		CAFCD01216E564C00072685B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAFCD01416E564C00072685B /* EventFakerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventFakerTests.h; sourceTree = "<group>"; };
+		CAFCD01516E564C00072685B /* EventFakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventFakerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAFCCFE516E564BF0072685B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCCFEC16E564BF0072685B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFCD00416E564C00072685B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCD00A16E564C00072685B /* SenTestingKit.framework in Frameworks */,
+				CAFCD00B16E564C00072685B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAFCCFDF16E564BF0072685B = {
+			isa = PBXGroup;
+			children = (
+				CAFCCFF116E564BF0072685B /* EventFaker */,
+				CAFCD00E16E564C00072685B /* EventFakerTests */,
+				CAFCCFEA16E564BF0072685B /* Frameworks */,
+				CAFCCFE916E564BF0072685B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAFCCFE916E564BF0072685B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCCFE816E564BF0072685B /* EventFaker.app */,
+				CAFCD00816E564C00072685B /* EventFakerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAFCCFEA16E564BF0072685B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCCFEB16E564BF0072685B /* Cocoa.framework */,
+				CAFCD00916E564C00072685B /* SenTestingKit.framework */,
+				CAFCCFED16E564BF0072685B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAFCCFED16E564BF0072685B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCCFEE16E564BF0072685B /* AppKit.framework */,
+				CAFCCFEF16E564BF0072685B /* CoreData.framework */,
+				CAFCCFF016E564BF0072685B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CAFCCFF116E564BF0072685B /* EventFaker */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCCFFD16E564BF0072685B /* AppDelegate.h */,
+				CAFCCFFE16E564BF0072685B /* AppDelegate.m */,
+				CAFCD00016E564BF0072685B /* MainMenu.xib */,
+				CAFCCFF216E564BF0072685B /* Supporting Files */,
+			);
+			path = EventFaker;
+			sourceTree = "<group>";
+		};
+		CAFCCFF216E564BF0072685B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCCFF316E564BF0072685B /* EventFaker-Info.plist */,
+				CAFCCFF416E564BF0072685B /* InfoPlist.strings */,
+				CAFCCFF716E564BF0072685B /* main.m */,
+				CAFCCFF916E564BF0072685B /* EventFaker-Prefix.pch */,
+				CAFCCFFA16E564BF0072685B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAFCD00E16E564C00072685B /* EventFakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCD01416E564C00072685B /* EventFakerTests.h */,
+				CAFCD01516E564C00072685B /* EventFakerTests.m */,
+				CAFCD00F16E564C00072685B /* Supporting Files */,
+			);
+			path = EventFakerTests;
+			sourceTree = "<group>";
+		};
+		CAFCD00F16E564C00072685B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAFCD01016E564C00072685B /* EventFakerTests-Info.plist */,
+				CAFCD01116E564C00072685B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAFCCFE716E564BF0072685B /* EventFaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFCD01916E564C00072685B /* Build configuration list for PBXNativeTarget "EventFaker" */;
+			buildPhases = (
+				CAFCCFE416E564BF0072685B /* Sources */,
+				CAFCCFE516E564BF0072685B /* Frameworks */,
+				CAFCCFE616E564BF0072685B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventFaker;
+			productName = EventFaker;
+			productReference = CAFCCFE816E564BF0072685B /* EventFaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAFCD00716E564C00072685B /* EventFakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFCD01C16E564C00072685B /* Build configuration list for PBXNativeTarget "EventFakerTests" */;
+			buildPhases = (
+				CAFCD00316E564C00072685B /* Sources */,
+				CAFCD00416E564C00072685B /* Frameworks */,
+				CAFCD00516E564C00072685B /* Resources */,
+				CAFCD00616E564C00072685B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFCD00D16E564C00072685B /* PBXTargetDependency */,
+			);
+			name = EventFakerTests;
+			productName = EventFakerTests;
+			productReference = CAFCD00816E564C00072685B /* EventFakerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAFCCFE016E564BF0072685B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Scott Hess";
+			};
+			buildConfigurationList = CAFCCFE316E564BF0072685B /* Build configuration list for PBXProject "EventFaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CAFCCFDF16E564BF0072685B;
+			productRefGroup = CAFCCFE916E564BF0072685B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAFCCFE716E564BF0072685B /* EventFaker */,
+				CAFCD00716E564C00072685B /* EventFakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAFCCFE616E564BF0072685B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCCFF616E564BF0072685B /* InfoPlist.strings in Resources */,
+				CAFCCFFC16E564BF0072685B /* Credits.rtf in Resources */,
+				CAFCD00216E564BF0072685B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFCD00516E564C00072685B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCD01316E564C00072685B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAFCD00616E564C00072685B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAFCCFE416E564BF0072685B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCCFF816E564BF0072685B /* main.m in Sources */,
+				CAFCCFFF16E564BF0072685B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFCD00316E564C00072685B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCD01616E564C00072685B /* EventFakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAFCD00D16E564C00072685B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFCCFE716E564BF0072685B /* EventFaker */;
+			targetProxy = CAFCD00C16E564C00072685B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAFCCFF416E564BF0072685B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFCCFF516E564BF0072685B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CAFCCFFA16E564BF0072685B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFCCFFB16E564BF0072685B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CAFCD00016E564BF0072685B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFCD00116E564BF0072685B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CAFCD01116E564C00072685B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFCD01216E564C00072685B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAFCD01716E564C00072685B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CAFCD01816E564C00072685B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CAFCD01A16E564C00072685B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFaker/EventFaker-Prefix.pch";
+				INFOPLIST_FILE = "EventFaker/EventFaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CAFCD01B16E564C00072685B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFaker/EventFaker-Prefix.pch";
+				INFOPLIST_FILE = "EventFaker/EventFaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CAFCD01D16E564C00072685B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EventFaker.app/Contents/MacOS/EventFaker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFaker/EventFaker-Prefix.pch";
+				INFOPLIST_FILE = "EventFakerTests/EventFakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CAFCD01E16E564C00072685B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EventFaker.app/Contents/MacOS/EventFaker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventFaker/EventFaker-Prefix.pch";
+				INFOPLIST_FILE = "EventFakerTests/EventFakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAFCCFE316E564BF0072685B /* Build configuration list for PBXProject "EventFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFCD01716E564C00072685B /* Debug */,
+				CAFCD01816E564C00072685B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFCD01916E564C00072685B /* Build configuration list for PBXNativeTarget "EventFaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFCD01A16E564C00072685B /* Debug */,
+				CAFCD01B16E564C00072685B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAFCD01C16E564C00072685B /* Build configuration list for PBXNativeTarget "EventFakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFCD01D16E564C00072685B /* Debug */,
+				CAFCD01E16E564C00072685B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAFCCFE016E564BF0072685B /* Project object */;
+}
