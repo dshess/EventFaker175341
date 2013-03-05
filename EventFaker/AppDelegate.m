@@ -48,10 +48,10 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
   }
 
   PostKey(&psn, (CGKeyCode)kVK_ANSI_F, 0);
-  usleep(200000);
+  usleep(500000);
   PostKey(&psn, (CGKeyCode)53, 0);
 
-  [self performSelector:@selector(step) withObject:nil afterDelay:1.1];
+  [self performSelector:@selector(step) withObject:nil afterDelay:0.6];
 }
 
 - (IBAction)start:(id)sender {
