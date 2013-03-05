@@ -8,11 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+  ProcessSerialNumber psn;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField* field;
 @property (assign) BOOL posting;
+@property (assign) BOOL escape;
 
 - (IBAction)start:(id)sender;
 - (IBAction)stop:(id)sender;

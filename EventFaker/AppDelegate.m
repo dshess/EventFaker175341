@@ -28,36 +28,19 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
   if (!_posting)
     return;
 
-  NSArray* apps = [NSRunningApplication runningApplicationsWithBundleIdentifier:[_field stringValue]];
-  if (![apps count]) {
-    NSLog(@"Unable to find apps for: %@", [_field stringValue]);
-    return;
+  if (_escape) {
+    PostKey(&psn, (CGKeyCode)53, 0);
+  } else {
+    PostKey(&psn, (CGKeyCode)kVK_ANSI_F, 0);
   }
+  _escape = !_escape;
 
-  if ([apps count] > 1) {
-    NSLog(@"Found more than one: %@", apps);
-    return;
-  }
-
-  NSRunningApplication* chrome = [apps objectAtIndex:0];
-    
-  ProcessSerialNumber psn;
-  if (GetProcessForPID([chrome processIdentifier], &psn) != noErr) {
-    NSLog(@"Unable to fetch psn for %@", chrome);
-    return;
-  }
-
-  PostKey(&psn, (CGKeyCode)kVK_ANSI_F, 0);
-  usleep(500000);
-  PostKey(&psn, (CGKeyCode)53, 0);
-
-  [self performSelector:@selector(step) withObject:nil afterDelay:0.6];
+  [self performSelector:@selector(step) withObject:nil afterDelay:0.65];
 }
 
 - (IBAction)start:(id)sender {
   NSLog(@"-start:");
 
-
   NSArray* apps = [NSRunningApplication runningApplicationsWithBundleIdentifier:[_field stringValue]];
   if (![apps count]) {
     NSLog(@"Unable to find apps for: %@", [_field stringValue]);
@@ -71,7 +54,6 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
 
   NSRunningApplication* chrome = [apps objectAtIndex:0];
     
-  ProcessSerialNumber psn;
   if (GetProcessForPID([chrome processIdentifier], &psn) != noErr) {
     NSLog(@"Unable to fetch psn for %@", chrome);
     return;
@@ -80,6 +62,7 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
   PostKey(&psn, (CGKeyCode)kVK_ANSI_L, kCGEventFlagMaskCommand);
 
   _posting = YES;
+  _escape = NO;
   [self step];
 }
 
