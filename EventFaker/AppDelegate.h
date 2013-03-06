@@ -17,7 +17,7 @@
 @property (assign) IBOutlet NSTextField* fTimeField;
 @property (assign) IBOutlet NSTextField* escTimeField;
 @property (assign) BOOL posting;
-@property (assign) BOOL escape;
+@property (assign) size_t index;
 
 - (IBAction)start:(id)sender;
 - (IBAction)stop:(id)sender;

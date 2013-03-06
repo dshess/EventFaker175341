@@ -25,18 +25,30 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
 @implementation AppDelegate
 
 - (void)step {
-  if (!_posting)
-    return;
-
-  if (_escape) {
-    PostKey(&psn, (CGKeyCode)53, 0);
-  } else {
-    PostKey(&psn, (CGKeyCode)kVK_ANSI_F, 0);
-  }
-  _escape = !_escape;
-
-  NSTimeInterval delay = [(_escape ? _escTimeField : _fTimeField) doubleValue];
-  [self performSelector:@selector(step) withObject:nil afterDelay:delay];
+    if (!_posting)
+        return;
+    
+    static CGKeyCode codes[] = {
+        (CGKeyCode)kVK_ANSI_F,
+        (CGKeyCode)kVK_ANSI_A,
+        (CGKeyCode)kVK_ANSI_C,
+        (CGKeyCode)kVK_ANSI_E,
+        (CGKeyCode)kVK_ANSI_B,
+        (CGKeyCode)kVK_ANSI_O,
+        (CGKeyCode)kVK_ANSI_O,
+        (CGKeyCode)kVK_ANSI_K,
+        (CGKeyCode)53,
+        (CGKeyCode)-1
+    };
+    NSTimeInterval delay;
+    if (codes[_index] != (CGKeyCode)-1) {
+        PostKey(&psn, codes[_index++], 0);
+        delay = [_fTimeField doubleValue];
+    } else {
+        _index = 0;
+        delay = [_escTimeField doubleValue];
+    }
+    [self performSelector:@selector(step) withObject:nil afterDelay:delay];
 }
 
 - (IBAction)start:(id)sender {
@@ -63,7 +75,7 @@ static void PostKey(ProcessSerialNumber* psnp, CGKeyCode keyCode, int flags) {
   PostKey(&psn, (CGKeyCode)kVK_ANSI_L, kCGEventFlagMaskCommand);
 
   _posting = YES;
-  _escape = NO;
+  _index = 0;
   [self step];
 }
 
